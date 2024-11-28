@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient Rang Kombinatsiyasi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="./icons/javascript-logo-0.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img style="width: 40px" src="./icons/javascript-logo-0.png" alt="" />
+        <p>algorithms.</p>
+      </div>
+      <div class="navbar">
+        <nav>
+          <a href="#first">First</a>
+          <a href="#second">Second</a>
+          <a href="#third">Third</a>
+          <a href="#fivth">Fivth</a>
+          <a href="#sixth">Sixth</a>
+        </nav>
+        <div class="btns">
+          <a href=""><i class="fa-brands fa-github"></i></a>
+          <i class="fa-solid fa-moon moon-icon"></i>
+        </div>
+      </div>
+    </header>
+    <h1>Algorithms from Qudrat Abdurahimov</h1>
+    <div class="container">
+      <section id="first">
+        <div id="content">
+          <h2>
+            <span>Integer14.</span> Uch xonali son berilgan. Uning o‘ngdan
+            birinchi raqamini o‘chirib chap tarafga yozishdan hosil bo‘lgan
+            sonni aniqlovchi programma tuzilsin.
+          </h2>
+          <br />
+          <input
+            id="inputValue"
+            type="number"
+            placeholder="Uch xonali son kiriting"
+            maxlength="3"
+          />
+          <button onclick="int14()">Hisoblash</button>
+          <div class="output" id="output"><p>Output</p></div>
+        </div>
+        <img
+          style="
+            width: 45%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          "
+          src="./images/Screenshot_6.png"
+          alt=""
+        />
+      </section>
+      <section id="second">
+        <div id="content">
+          <h2>
+            <span>Integer18. </span> 999 dan katta bo‘lgan son berilgan. Bir
+            marta bo‘lib butunni va bo‘lib qoldiqni olish operatsiyasidan
+            foydalanib berilgan sonni mingliklar xonasidagi sonni aniqlovchi
+            programma tuzilsin.
+          </h2>
+          <br />
+          <input
+            id="inputValue18"
+            type="number"
+            placeholder="To'rt xonali son kiriting"
+            maxlength="4"
+          />
+          <button onclick="int18()">Hisoblash</button>
+          <div class="output" id="output18"><p>Output</p></div>
+        </div>
+        <img
+          style="
+            width: 45%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          "
+          src="./images/Screenshot_1.png"
+          alt=""
+        />
+      </section>
+      <section id="third">
+        <div id="content">
+          <h2>
+            <span>Integer11.</span> Uch xonali son berilgan. Uning raqamlar
+            yig‘indisini aniqlovchi programma tuzilsin.
+          </h2>
+          <br />
+          <input
+            id="inputValue11"
+            type="number"
+            placeholder="Uch xonali son kiriting"
+            maxlength="3"
+          />
+          <button onclick="int11()">Hisoblash</button>
+          <div class="output" id="output11"><p>Output</p></div>
+        </div>
+        <img
+          style="
+            width: 45%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          "
+          src="./images/Screenshot_2.png"
+          alt=""
+        />
+      </section>
+      <section id="fourth">
+        <div id="content">
+          <h2>
+            <span>Integer12.</span> Uch xonali son berilgan. Uning raqamlarini
+            teskari tartibda yozishdan hosil bo‘lgan sonni
+          </h2>
+          <br />
+          <input
+            id="inputValue12"
+            type="number"
+            placeholder="Uch xonali son kiriting"
+            maxlength="3"
+          />
+          <button onclick="int12()">Hisoblash</button>
+          <div class="output" id="output12"><p>Output</p></div>
+        </div>
+        <img
+          style="
+            width: 45%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          "
+          src="./images/Screenshot_3.png"
+          alt=""
+        />
+      </section>
+      <section id="fivth">
+        <div id="content">
+          <h2>
+            <span>Integer21 .</span> Kun boshidan boshlab N sekund vaqt o‘tti.
+            Kun boshidan boshlab qancha minut va sekund o‘tganini aniqlovchi
+            programma tuzilsin.
+          </h2>
+          <br />
+          <input
+            id="inputValue21"
+            type="number"
+            placeholder="Uch xonali son kiriting"
+            maxlength="3"
+          />
+          <button onclick="int21()">Hisoblash</button>
+          <div class="output" id="output21"><p>Output</p></div>
+        </div>
+        <img
+          style="
+            width: 45%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          "
+          src="./images/Screenshot_4.png"
+          alt=""
+        />
+      </section>
+      <section id="sixth">
+        <div id="content">
+          <h2>
+            <span>Integer14.</span> Uch xonali son berilgan. Uning o‘ngdan
+            birinchi raqamini o‘chirib chap tarafga yozishdan hosil bo‘lgan
+            sonni aniqlovchi programma tuzilsin.
+          </h2>
+          <br />
+          <input
+            id="inputValue"
+            type="number"
+            placeholder="Uch xonali son kiriting"
+            maxlength="3"
+          />
+          <button onclick="int14()">Hisoblash</button>
+          <div id="output"><p>Output</p></div>
+        </div>
+        <img
+          style="
+            width: 45%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          "
+          src="./images/Screenshot_6.png"
+          alt=""
+        />
+      </section>
+    </div>
+    <footer>
+      <div class="logo">
+        <img style="width: 40px" src="./icons/javascript-logo-0.png" alt="" />
+        <p>algorithms.</p>
+      </div>
+      <div class="navbar">
+        <nav>
+          <a href="#first">First</a>
+          <a href="#second">Second</a>
+          <a href="#third">Third</a>
+          <a href="#fivth">Fivth</a>
+          <a href="#sixth">Sixth</a>
+        </nav>
+      </div>
+      <p>&copy; 2024 JavaScript Algorithms by Mr.Abdulloh.</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
