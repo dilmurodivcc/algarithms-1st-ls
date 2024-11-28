@@ -25,9 +25,8 @@ body.light {
   --text-color: #333333;
   --content-bg-color: rgba(0, 0, 0, 0.1);
   --btns-bg: #a8a6a6;
-
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
@@ -55,7 +54,7 @@ body {
   justify-content: center;
   flex-direction: column;
   gap: 150px;
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 
 header {
@@ -73,24 +72,25 @@ header {
   border-radius: 0 0 var(--border-radius) var(--border-radius);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-h1{
+h1 {
   font-size: 56px;
   background: var(--highlight-color);
   background-clip: text;
   margin-bottom: 70px;
   -webkit-text-fill-color: transparent;
-
 }
 
 footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   padding: 30px 40px;
   backdrop-filter: blur(420px);
   background-color: var(--secondary-bg-color);
   z-index: 1000;
   margin-top: 150px;
+  z-index: 1000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -230,5 +230,86 @@ h2 {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+  background-color: var(--highlight-color);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#backToTopBtn:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+.tutun {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--highlight-color);
+  border-radius: 100%;
+  pointer-events: none;
+  filter: blur(8px);
+  opacity: 0.9;
+  transition: transform 0.3s, opacity 0.5s;
+  z-index: 100;
+}
+a{
+  transition: all 0.2s ease;
+}
+a:hover{
+  color: var(--highlight-color);
+  transition: all 0.2s ease;
+  transform: scale(1.02);  
+}
+@media screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+  .logo {
+    gap: 2px;
+  }
+  .logo p {
+    font-size: 18px;
+  }
+  footer {
+    flex-direction: column !important;
+    gap: 10px;
+  }
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  section {
+    flex-wrap: wrap;
+    flex-direction: column !important;
+  }
+  #content {
+    width: 90vw;
+  }
+  input {
+    width: 100%;
+  }
+  #content button {
+    width: 100%;
+  }
+  #content .output {
+    width: 100%;
+  }
+  .code {
+    width: 90vw !important;
+    margin-top: 30px;
   }
 }
