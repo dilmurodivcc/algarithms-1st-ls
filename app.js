@@ -50,6 +50,19 @@ function int21() {
   ).innerText = `${min} minut va ${sec} sekund o‘tgan`;
 }
 
+
+function int7() {
+  const input7 = document.getElementById("inputValue7").value;
+  const number7 = parseInt(input7);
+  const ten7 = (number7 - (number7 % 10)) / 10;
+  const one7 = number7 % 10;
+  const result7 = one7 + ten7;
+  document.getElementById("output7").innerText = `Raqamlar yig'indisi: ${result7}`;
+}
+
+// SOME FUNCTION -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+
 const moonIcon = document.querySelector(".moon-icon");
 const body = document.body;
 
@@ -59,8 +72,6 @@ if (!localStorage.getItem("mode")) {
 } else {
   body.classList.add(localStorage.getItem("mode"));
 }
-
-// SOME FUNCTION -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 moonIcon.addEventListener("click", () => {
   if (body.classList.contains("dark")) {
@@ -121,10 +132,7 @@ document.addEventListener("mousemove", (e) => {
     smoke.remove();
   }, 550);
 });
-AOS.init(
-  {
-    duration: 1700,
-    once: true,
-  },
-
-);
+AOS.init({
+  duration: 1700,
+  once: true,
+});
