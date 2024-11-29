@@ -121,10 +121,3 @@ document.addEventListener("mousemove", (e) => {
     smoke.remove();
   }, 550);
 });
-
-
-// Sayt to'liq yuklangandan so'ng
-window.addEventListener("load", function () {
-  const loading = document.getElementById("loader");
-  loading.style.display = "none"; // Loading ekranini yashirish
-});
