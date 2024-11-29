@@ -42,12 +42,14 @@ body {
     var(--primary-bg-color)
   );
   background-size: 400% 400%;
+  overflow-x: hidden;
 }
 
 .container {
   max-width: 1200px;
+  overflow-x: hidden;
+
   margin: 0 auto;
-  overflow-y: hidden;
   width: 100%;
   display: flex;
   align-items: center;

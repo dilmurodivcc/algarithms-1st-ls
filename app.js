@@ -121,3 +121,10 @@ document.addEventListener("mousemove", (e) => {
     smoke.remove();
   }, 550);
 });
+AOS.init(
+  {
+    duration: 1700,
+    once: true,
+  },
+
+);
